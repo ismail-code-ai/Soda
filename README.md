@@ -20,3 +20,9 @@ Deploy this repository as a static site on Vercel, Netlify, or GitHub Pages, wit
 - Navigation items beyond Home display placeholder notices.
 - Reduced-motion preferences disable decorative movement.
 - Mobile layouts are implemented, but physical iPhone and desktop browser testing are still required.
+
+## Mobile performance mode
+
+On screens up to 760px, the site starts with a lightweight product PNG instead of automatically rendering WebGL. Tap **Enable 3D** to opt in to the interactive model. Decorative berries are lightweight elements rather than separate WebGL scenes. Animation updates are throttled, and bubbles are less frequent. These changes prioritize mobile stability over exact visual fidelity.
+
+**Verification status:** code committed, but no real Safari or desktop browser performance measurements have been run yet. The Vercel production deployment on `main` is not changed by this feature branch.
